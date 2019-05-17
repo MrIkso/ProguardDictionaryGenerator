@@ -65,7 +65,7 @@ public class MainActivity extends Activity
 				File dir = new File(sdcard.getAbsolutePath() + "/Proguard Directory/");
 				dir.mkdir();
 				File myExternalFile = new File(dir , filename + ".txt"); 
-				FileWriter writer = new FileWriter(myExternalFile, true);
+				FileWriter writer = new FileWriter(myExternalFile);
 				for (String s:set)
 				{
 					writer.write(s + "\n");
