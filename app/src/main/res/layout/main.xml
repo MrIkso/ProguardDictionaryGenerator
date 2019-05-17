@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	tools:context=".MainActivity"
+	android:id="@+id/relLayout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<EditText
+		android:id="@+id/dict_name"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_below="@+id/textView"
+		android:layout_centerHorizontal="true"
+		android:hint="Dictionary Name"/>
+
+	<EditText
+		android:id="@+id/dict_count"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_below="@+id/dict_name"
+		android:layout_centerHorizontal="true"
+		android:hint="Count"
+		android:inputType="number"/>
+
+	<EditText
+		android:id="@+id/text_dict"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_below="@+id/dict_count"
+		android:layout_centerHorizontal="true"
+		android:hint="Enter your word"/>
+
+	<Button
+		android:id="@+id/btn_denerate"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/text_dict"
+		android:layout_marginTop="10dp"
+		android:text="Generate Dictionary"/>
+
+</RelativeLayout>
+
