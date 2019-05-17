@@ -13,7 +13,7 @@ import com.app.proguard.App;
 public class MainActivity extends Activity 
 {
 	static HashSet<String> set = new HashSet<>();
-	public static TextView textDict,textName, textCount ;
+	public static EditText textDict,textName, textCount ;
 	Button generate;
 	static Context context = App.getContext();
 	
@@ -22,8 +22,8 @@ public class MainActivity extends Activity
     {
 		super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-	    textDict = (EditText) findViewById(R.id.dict_name);
-		textName = (EditText) findViewById(R.id.text_dict);
+	    textName = (EditText) findViewById(R.id.dict_name);
+		textDict= (EditText) findViewById(R.id.text_dict);
 		textCount = (EditText) findViewById(R.id.dict_count);
 		generate = (Button) findViewById(R.id.btn_denerate); 
 		generate.setOnClickListener(new View.OnClickListener() { 
